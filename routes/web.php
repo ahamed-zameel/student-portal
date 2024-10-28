@@ -18,28 +18,28 @@ use App\Http\Controllers\SubjectController;
 
 
 
-// Route::match(['get', 'post'], '/product-add', [ProductController::class, 'productadd'])->name('product.add');
+Route::match(['get', 'post'], '/product-add', [ProductController::class, 'productadd'])->name('product.add');
 
 
-// Route::get('/product-list', [ProductController::class, 'productList'])->name('product.list');
+Route::get('/product-list', [ProductController::class, 'productList'])->name('product.list');
 
-// Route::get('/products', [ProductController::class, 'productList'])->name('product.list');
-// Route::get('/product-add', [ProductController::class, 'productadd'])->name('product.add');
-// Route::get('/product-edit/{id}', [ProductController::class, 'edit'])->name('product.edit');
-// Route::post('/product-update/{id}', [ProductController::class, 'update'])->name('product.update');
-// Route::delete('/product-delete/{id}', [ProductController::class, 'destroy'])->name('product.delete');
+Route::get('/products', [ProductController::class, 'productList'])->name('product.list');
+Route::get('/product-add', [ProductController::class, 'productadd'])->name('product.add');
+Route::get('/product-edit/{id}', [ProductController::class, 'edit'])->name('product.edit');
+Route::post('/product-update/{id}', [ProductController::class, 'update'])->name('product.update');
+Route::delete('/product-delete/{id}', [ProductController::class, 'destroy'])->name('product.delete');
 
 
 // //sales
-// Route::match(['get', 'post'], '/sales-add', [saleController::class, 'salesadd'])->name('sales.add');
-// Route::get('/sales-list', [SaleController::class, 'salesList'])->name('sales.list');
-// Route::get('/sales-add', [SaleController::class, 'salesadd'])->name('sales.add');
-// Route::delete('/sales-delete/{id}', [SaleController::class, 'destroy'])->name('sales.delete');
+Route::match(['get', 'post'], '/sales-add', [saleController::class, 'salesadd'])->name('sales.add');
+Route::get('/sales-list', [SaleController::class, 'salesList'])->name('sales.list');
+Route::get('/sales-add', [SaleController::class, 'salesadd'])->name('sales.add');
+Route::delete('/sales-delete/{id}', [SaleController::class, 'destroy'])->name('sales.delete');
 
-// Route::get('export', [SaleController::class, 'export'])->name('export');
+Route::get('export', [SaleController::class, 'export'])->name('export');
 
-// Route::get('import', [SaleController::class, 'Importview'])->name('import_view');
-// Route::post('import', [SaleController::class, 'Import'])->name('import');
+Route::get('import', [SaleController::class, 'Importview'])->name('import_view');
+Route::post('import', [SaleController::class, 'Import'])->name('import');
 
 
 //login
